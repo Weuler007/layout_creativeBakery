@@ -74,11 +74,19 @@
         id="home"
       >
         <p class="hero__description">
-          We bake your fantasies - croissants, cakes, cookies, and cupcakes.
+          <span class="hero__description-line">
+            We bake your fantasies - croissants,
+          </span>
+          <span class="hero__description-line">
+            cakes, cookies, and cupcakes.
+          </span>
         </p>
 
         <div class="hero__content">
-          <h1 class="hero__title">Creative Bakery</h1>
+          <h1 class="hero__title">
+            <span class="hero__title-word">Creative</span>
+            <span class="hero__title-word">Bakery</span>
+          </h1>
 
           <img
             class="hero__image"
@@ -126,9 +134,9 @@
 
           <article class="product-card">
             <img
-              class="product-card__image"
-              src="src/images/photo-product-02.png"
-              alt="Chocolate pastries"
+              class="product-card__image product-card__image--chocolate"
+              src="src/images/choc.png"
+              alt="Chocolate almond cake"
             />
             <p class="product-card__category">Cakes</p>
             <h3 class="product-card__title">Chocolate truffle cake</h3>
@@ -143,8 +151,8 @@
           <article class="product-card">
             <img
               class="product-card__image"
-              src="src/images/photo-product-03.png"
-              alt="Small decorated desserts"
+              src="src/images/photo-product-05.png"
+              alt="Coconut glazed donuts"
             />
             <p class="product-card__category">Donuts</p>
             <h3 class="product-card__title">Caramel mini donuts</h3>
@@ -175,7 +183,7 @@
           <article class="product-card">
             <img
               class="product-card__image"
-              src="src/images/photo-product-05.png"
+              src="src/images/photo-product-03.png"
               alt="Chocolate berry cake"
             />
             <p class="product-card__category">Cakes</p>
@@ -191,11 +199,11 @@
           <article class="product-card">
             <img
               class="product-card__image"
-              src="src/images/choc.png"
-              alt="Chocolate cake slice"
+              src="src/images/photo-product-02.png"
+              alt="Fresh cookies on pink background"
             />
-            <p class="product-card__category">Pastry</p>
-            <h3 class="product-card__title">Dark chocolate tart</h3>
+            <p class="product-card__category">Cookies</p>
+            <h3 class="product-card__title">Chocolate chip cookies</h3>
             <a
               class="product-card__link"
               href="#contact"
@@ -214,9 +222,25 @@
         <div class="about__intro">
           <h2 class="about__title">Few words about us</h2>
           <p class="about__text">
-            Like many design teams, we seek creative solutions for our clients.
-            We turn bold ideas into warm pastries, handmade cakes, and cookies
-            that make everyday moments feel special.
+            <span class="about__text-line">
+              Like many design teams, Onfido made the transition from Abstract
+              + Sketch,
+            </span>
+            <span class="about__text-line">
+              to Figma in the last couple of years. One of the common
+              resistance points
+            </span>
+            <span class="about__text-line">
+              internally before making that switch, was Figma's lack of
+              Git-style branching
+            </span>
+            <span class="about__text-line">
+              that Abstract enabled. The design team had come to rely on
+              branching
+            </span>
+            <span class="about__text-line">
+              and had built a lot of our processes around it.
+            </span>
           </p>
         </div>
 
@@ -255,11 +279,7 @@
           href="#home"
           aria-label="Creative Bakery home"
         >
-          <img
-            class="footer__logo-image"
-            src="src/images/Logo.png"
-            alt="Creative Bakery"
-          />
+          Bakerlab
         </a>
 
         <nav class="footer__nav footer-nav">
@@ -282,35 +302,76 @@
           >
             Blog
           </a>
+          <a
+            class="footer-nav__link"
+            href="#"
+          >
+            Terms & Privacy
+          </a>
         </nav>
 
         <div class="footer__contact">
           <h2 class="footer__title">Contact us</h2>
-          <div class="footer__links">
-            <a
-              class="footer__link"
-              href="tel:+380994073607"
-            >
-              +38 (099) 407 36 07
-            </a>
-            <a
-              class="footer__link"
-              href="mailto:bakery.info@gmail.com"
-            >
-              bakery.info@gmail.com
-            </a>
+          <div class="footer__columns">
+            <div class="footer__column">
+              <p class="footer__subtitle">Call us</p>
+              <a
+                class="footer__link"
+                href="tel:+16295550129"
+              >
+                (629) 555-0129
+              </a>
+              <a
+                class="footer__link"
+                href="tel:+16035550123"
+              >
+                (603) 555-0123
+              </a>
+              <a
+                class="footer__link"
+                href="tel:+17045550127"
+              >
+                (704) 555-0127
+              </a>
+            </div>
+
+            <div class="footer__column">
+              <p class="footer__subtitle">Email us</p>
+              <a
+                class="footer__link"
+                href="mailto:bakerlab@example.com"
+              >
+                bakerlab@example.com
+              </a>
+            </div>
           </div>
         </div>
 
         <div class="footer__bottom">
-          <a
-            class="footer__social"
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Instagram"
-          ></a>
-          <p class="footer__copy">© Bakerlab 2026</p>
+          <div class="footer__socials">
+            <a
+              class="footer__social footer__social--facebook"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Facebook"
+            ></a>
+            <a
+              class="footer__social footer__social--instagram"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram"
+            ></a>
+            <a
+              class="footer__social footer__social--twitter"
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Twitter"
+            ></a>
+          </div>
+          <p class="footer__copy">&copy; Bakerlab 2022</p>
         </div>
       </div>
     </footer>

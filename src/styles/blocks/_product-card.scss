@@ -2,21 +2,39 @@
 
 .product-card {
   @include on-desktop {
-    &:nth-child(4n + 3) {
-      grid-column: 3;
+    grid-column: span 3;
+
+    &:nth-child(2) {
+      grid-column: 4 / span 3;
     }
 
-    &:nth-child(4n + 4) {
-      grid-column: 4;
+    &:nth-child(3) {
+      grid-column: 3 / span 3;
+    }
+
+    &:nth-child(4) {
+      grid-column: 6 / span 3;
+    }
+
+    &:nth-child(5) {
+      grid-column: 1 / span 3;
+    }
+
+    &:nth-child(6) {
+      grid-column: 4 / span 3;
     }
   }
 
   &__image {
     width: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 432 / 560;
     margin-bottom: 16px;
     border-radius: 8px;
     object-fit: cover;
+  }
+
+  &__image--chocolate {
+    object-position: 48% center;
   }
 
   &__category {
