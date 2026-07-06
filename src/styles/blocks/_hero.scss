@@ -59,24 +59,25 @@
     z-index: 1;
     grid-area: 1 / 1;
     color: $color-orange;
-    font-size: clamp(64px, 19vw, 136px);
+    font-size: 64px;
     line-height: 85%;
     text-align: center;
     text-transform: uppercase;
 
     @include on-tablet {
-      white-space: nowrap;
+      font-size: 80px;
     }
 
     @include on-desktop {
-      font-size: 144px;
+      font-size: 136px;
+      white-space: nowrap;
     }
   }
 
   &__title-word {
     display: block;
 
-    @include on-tablet {
+    @include on-desktop {
       display: inline;
     }
   }
